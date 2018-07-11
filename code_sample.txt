@@ -1,0 +1,56 @@
+declaring variables
+
+x int
+p *int
+a [3]int
+
+
+func main(variable int) int {
+
+}
+
+-------------------------------
+Closure:
+sum := func(a,b int) int { return a+b } (3,4)
+
+----------------
+Pointers
+
+var p *int
+x = *p
+
+----------------
+Structs
+
+type T struct {
+	variableName1 string
+	variableName2 int
+}
+
+-----------------
+Comments
+
+
+
+--------------------
+if statements
+
+if x>0 {
+	return y
+}
+
+---------------------
+Semicolons
+
+Source code doesn't have semicolon. It is automatically inserted.
+This means it enforces bracket style like this:
+
+if i < f() {
+    g()
+}
+
+This is invalid:
+if i < f()  // wrong!
+{           // wrong!
+    g()
+}

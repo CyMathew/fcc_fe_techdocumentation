@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FCC Project - Technical Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav id="navbar">
+        <header>
+        </header>
+        <a href="#introduction" class="nav-link">Introduction</a>
+        <a href="#variables_and_functions" class="nav-link">Variables and Functions</a>
+        <a href="#comments" class="nav-link">Comments & Style Warnings</a>
+        <a href="#control_statements" class="nav-link">Control Statements</a>
+        <a href="#structs" class="nav-link">Structs</a>
+    </nav>
+
+    <main id="main-doc">
+        <section class="main-section" id="introduction">
+            <header>
+                <h2>Introduction</h2>
+            </header>
+            <p>Go is a new language made by Google. It borrows ideas from existing languages and is most similar to C++</p>
+            <p>Go specializes in concurrency.</p>
+        </section>
+        <section class="main-section" id="variables_and_functions">
+            <header>
+                <h2>Declaring Variables and Functions</h2>
+            </header>
+            <p>Variables in Go are declared in a manner similar to C++ but it aims to simplify the declaration process by allowing the user to type in a stream of thought.</p>
+            <code>
+                <pre>
+                    x int
+                    p *int
+                    a [3]int
+                </pre>
+            </code>
+            <p>Here a variable <code>x</code> name is declared first before specifying its type. Same with the a pointer <code>p</code>, and an array <code>a</code>. Note that the number of elements is described before the type</p>
+            <p>Functions are declared like so:</p>
+            <code>
+                <pre>
+                    func main(variable int) int {
+                        return 0
+                    }
+                </pre>
+            </code>
+            <p>The keyword <code>func</code> is used to declare a function with its return type also being stated at the end of the declaration.</p>
+        </section>
+        <section class="main-section" id="comments">
+            <header>
+                <h2>Comments & Style Warnings</h2>
+            </header>
+            <p>Go's comment style is same as C++ which means multi-line comments are opened with <code>/*</code> and closed with <code>*/</code></p>
+            <p>Single line comments are opened with <code>//</code></p>
+            <code>
+                <pre>
+                    /*
+                     * Multiline comment
+                     */
+
+                    // Single Line Comment
+                </pre>
+            </code>
+            <p>As you may have noticed by now, Go does not require semicolons in the source code. It is auto added by the compiler but a consequence of that "feature" is that brackets must begin right after a statement that requires it:</p>
+            <code>
+                <pre>
+                    if i < f() {
+                        g()
+                    }
+                
+                </pre>
+            </code>
+
+            <code>
+                <pre>
+                    
+                    This is invalid:
+                    if i < f()  // wrong!
+                    {           // wrong!
+                        g()
+                    }
+                </pre>
+            </code>
+        </section>
+        <section class="main-section" id="control_statements">
+            <header>
+                <h2>Control Statements</h2>
+            </header>
+            <p>A small sample of all the control statements provided by Go:</p>
+            <ul>
+                <li>For</li>
+                <li>If</li>
+                <li>If-Else-If</li>
+                <li>Switch</li>
+                <li>break</li>
+            </ul>
+        </section>
+        <section class="main-section" id="structs">
+            <header>
+                <h2>Structs</h2>
+            </header>
+            <p>Structs are types that contain named fields. Used to create "objects" of sorts. Go doesn't have actual objects in the language</p>
+            <code>
+                <pre>
+                    type T struct {
+                        variableName1 string
+                        variableName2 int
+                    }
+                </pre>
+            </code>
+        </section>
+    </main>
+</body>
+</html>
