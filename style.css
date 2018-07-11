@@ -1,12 +1,103 @@
-code
+@import url('https://fonts.googleapis.com/css?family=Oxygen');
+
+body
 {
-    background-color: rgba(0, 0, 0, 0.063);
+    font-family: 'Oxygen', sans-serif;
+    margin: 0;
+    background-color: rgb(95, 95, 95);
+    color: white;
+}
+
+header
+{
+    border-bottom: 1px solid rgb(93, 159, 245);
+}
+
+h1, h2, h3
+{
+    display: inline-block;
+    margin: 5px 0;
+    color: white;
+}
+
+h1
+{
+    color: white;
+}
+
+#navbar
+{
+    position: fixed;
+    height: 100%;
+    width: 275px;
+    padding: 20px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.025);
+    background-color: rgb(66, 145, 224);
+}
+
+.nav-link
+{
+    display: block;
+    margin: 10px 0px;
+    text-decoration: none;
+    color: white;
+    border: 1px black;
+    width: 100%;
+    padding: 10px;
+    transition: background-color .15s ease-in-out,
+                color .15s ease-in-out;
+}
+
+a:hover
+{
+    color: black;
+    background-color: white;
+}
+
+
+main
+{
+    margin-left: 325px;
+    padding: 20px;
+}
+
+section
+{
+    margin-bottom: 40px;
+}
+
+code, pre
+{
+    background-color: rgba(255, 255, 255, 0.075);
     padding: 3px;
     border-radius: 3px;
 }
 
+
+pre > code
+{
+    padding: 0;
+    background-color:transparent;
+}
+
 pre
 {
+    padding: 10px 0px;
     margin: 0;
-    padding: 0;
+    max-width: 450px;
+}
+
+@media (max-width: 700px)
+{
+    #navbar
+    {
+        position: initial;
+        width: 100%;
+        height: 300px;
+    }
+
+    main
+    {
+        margin: 0;
+    }
 }

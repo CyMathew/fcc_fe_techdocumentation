@@ -11,82 +11,71 @@
 
     <nav id="navbar">
         <header>
+            <h1>GoLang Documentation</h1>
         </header>
-        <a href="#introduction" class="nav-link">Introduction</a>
-        <a href="#variables_and_functions" class="nav-link">Variables and Functions</a>
-        <a href="#comments" class="nav-link">Comments & Style Warnings</a>
-        <a href="#control_statements" class="nav-link">Control Statements</a>
-        <a href="#structs" class="nav-link">Structs</a>
+        <a href="#Introduction" class="nav-link">Introduction</a>
+        <a href="#Declaring_Variables_and_Functions" class="nav-link">Declaring Variables and Functions</a>
+        <a href="#Comments_&_Style_Warnings" class="nav-link">Comments & Style Warnings</a>
+        <a href="#Control_Statements" class="nav-link">Control Statements</a>
+        <a href="#Structs" class="nav-link">Structs</a>
     </nav>
 
     <main id="main-doc">
-        <section class="main-section" id="introduction">
+        <section class="main-section" id="Introduction">
             <header>
                 <h2>Introduction</h2>
             </header>
-            <p>Go is a new language made by Google. It borrows ideas from existing languages and is most similar to C++</p>
+            <p>Go is a new language made by Google. It borrows ideas from existing languages and is most similar to C</p>
             <p>Go specializes in concurrency.</p>
         </section>
-        <section class="main-section" id="variables_and_functions">
+        <section class="main-section" id="Declaring_Variables_and_Functions">
             <header>
                 <h2>Declaring Variables and Functions</h2>
             </header>
-            <p>Variables in Go are declared in a manner similar to C++ but it aims to simplify the declaration process by allowing the user to type in a stream of thought.</p>
-            <code>
-                <pre>
-                    x int
-                    p *int
-                    a [3]int
-                </pre>
-            </code>
+            <p>Variables in Go are declared in a manner similar to C but it aims to simplify the declaration process by allowing the user to type in a stream of thought.</p>
+            <pre><code>
+            x int
+            p *int
+            a [3]int
+            </code></pre>
             <p>Here a variable <code>x</code> name is declared first before specifying its type. Same with the a pointer <code>p</code>, and an array <code>a</code>. Note that the number of elements is described before the type</p>
             <p>Functions are declared like so:</p>
-            <code>
-                <pre>
-                    func main(variable int) int {
-                        return 0
-                    }
-                </pre>
-            </code>
+            <pre><code>
+            func main(variable int) int {
+                return 0
+            }
+            </code></pre>
             <p>The keyword <code>func</code> is used to declare a function with its return type also being stated at the end of the declaration.</p>
         </section>
-        <section class="main-section" id="comments">
+        <section class="main-section" id="Comments_&_Style_Warnings">
             <header>
                 <h2>Comments & Style Warnings</h2>
             </header>
-            <p>Go's comment style is same as C++ which means multi-line comments are opened with <code>/*</code> and closed with <code>*/</code></p>
+            <p>Go's comment style is same as C which means multi-line comments are opened with <code>/*</code> and closed with <code>*/</code></p>
             <p>Single line comments are opened with <code>//</code></p>
-            <code>
-                <pre>
-                    /*
-                     * Multiline comment
-                     */
+            <pre><code>
+            /*
+             * Multiline comment
+             */
 
-                    // Single Line Comment
-                </pre>
-            </code>
+            // Single Line Comment
+            </code></pre>
             <p>As you may have noticed by now, Go does not require semicolons in the source code. It is auto added by the compiler but a consequence of that "feature" is that brackets must begin right after a statement that requires it:</p>
-            <code>
-                <pre>
-                    if i < f() {
-                        g()
-                    }
-                
-                </pre>
-            </code>
+            <pre><code>
+            if i < f() {
+                g()
+            }
+            </code></pre>
 
-            <code>
-                <pre>
-                    
-                    This is invalid:
-                    if i < f()  // wrong!
-                    {           // wrong!
-                        g()
-                    }
-                </pre>
-            </code>
+            <pre><code>
+            This is invalid:
+            if i < f()  // wrong!
+            {           // wrong!
+                g()
+            }
+            </code></pre>
         </section>
-        <section class="main-section" id="control_statements">
+        <section class="main-section" id="Control_Statements">
             <header>
                 <h2>Control Statements</h2>
             </header>
@@ -99,20 +88,20 @@
                 <li>break</li>
             </ul>
         </section>
-        <section class="main-section" id="structs">
+        <section class="main-section" id="Structs">
             <header>
                 <h2>Structs</h2>
             </header>
             <p>Structs are types that contain named fields. Used to create "objects" of sorts. Go doesn't have actual objects in the language</p>
-            <code>
-                <pre>
-                    type T struct {
-                        variableName1 string
-                        variableName2 int
-                    }
-                </pre>
-            </code>
+            <pre><code>
+            type T struct {
+                variableName1 string
+                variableName2 int
+            }
+            </code></pre>
         </section>
     </main>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 </html>
